@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this, "Current Location Not Found", Toast.LENGTH_SHORT).show();
         }
 
-        // if Current Lat Long not set, Sorted with India Lat Long Default
+        // if Current Lat Long are not set then sorted would be done with India Lat Long.
         sortData(data, latitude, longitude);
 
         mRecyclerAdapter = new RecyclerAdapter(data, latitude, longitude);
